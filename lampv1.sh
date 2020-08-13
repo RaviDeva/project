@@ -18,3 +18,4 @@ cd terraform
 unzip redlog.zip
 
 cp -R redlog/* /var/www/html/
+apachectl restart
