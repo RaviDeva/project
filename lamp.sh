@@ -13,7 +13,7 @@ apt-get -y install apache2 mysql-server php5 php5-mysql unzip
 
 
 
-#sudo su
+sudo su
 
 #mkdir tmp
 
