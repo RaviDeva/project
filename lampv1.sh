@@ -19,3 +19,10 @@ unzip redlog.zip
 
 cp -R redlog/* /var/www/html/
 apachectl restart
+
+service mysql restart
+
+dbpass='$1'
+mysql --user='root' --password=$dbpass -e 'create database redlog'
+
+mysql --user='root' --password='Pa$$word@123' redlog < redlog.sql
